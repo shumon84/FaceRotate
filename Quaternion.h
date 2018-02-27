@@ -31,12 +31,6 @@ public:
   float X();
   float Y();
   float Z();
-
-public:
-  // 演算子オーバーロード
-  float &operator [](const int index);
-  Quaternion &operator =(const Quaternion other);
-  void operator =(const Quaternion other) const;
 };
 
 inline void Quaternion::W(float w) {
