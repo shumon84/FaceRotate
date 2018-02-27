@@ -6,5 +6,6 @@ find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 add_executable(FaceRotate
-  main.cpp)
+  main.cpp
+  Quaternion.cpp)
 target_link_libraries(FaceRotate ${OpenCV_LIBS})
